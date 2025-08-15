@@ -9,9 +9,9 @@
 
 // 📌 ধাপে ধাপে কাজের প্রক্রিয়া
 // শুরু: array এর প্রথম index (low) এবং শেষ index (high) ঠিক করো।
-
+ e
 // মাঝখান: mid = Math.floor((low + high) / 2) বের করো।
-
+ 
 // যদি arr[mid] == target → element পেয়ে গেছি।
 
 // যদি arr[mid] < target → element ডানদিকে আছে → low = mid + 1 করো।
@@ -44,3 +44,8 @@ if (result !== -1) {
 } else {
   console.log(`Element ${target} paoya jay ni`);
 }
+
+
+
+
+//foysal ahmed sorker > javascript proDev
