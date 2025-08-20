@@ -177,15 +177,16 @@ console.log(dijkstra(weightedGraph, 'A'));
 
 ### কোড (JavaScript)
 
-```javascript
+```;
+// javascript
 // Graph representation (Adjacency List)
 const graph = {
-  A: ["B", "C"],
-  B: ["D", "E"],
-  C: ["F"],
+  A: ['B', 'C'],
+  B: ['D', 'E'],
+  C: ['F'],
   D: [],
-  E: ["F"],
-  F: []
+  E: ['F'],
+  F: [],
 };
 
 function bfs(start) {
@@ -202,7 +203,7 @@ function bfs(start) {
   }
 }
 
-bfs("A"); 
+bfs('A');
 // Output: A B C D E F
 ```
 
@@ -215,14 +216,15 @@ bfs("A");
 
 ### কোড (JavaScript)
 
-```javascript
+```;
+// javascript
 const graph2 = {
-  A: ["B", "C"],
-  B: ["D", "E"],
-  C: ["F"],
+  A: ['B', 'C'],
+  B: ['D', 'E'],
+  C: ['F'],
   D: [],
-  E: ["F"],
-  F: []
+  E: ['F'],
+  F: [],
 };
 
 function dfs(node, visited = new Set()) {
@@ -235,7 +237,7 @@ function dfs(node, visited = new Set()) {
   }
 }
 
-dfs("A"); 
+dfs('A');
 // Output: A B D E F C
 ```
 
@@ -248,13 +250,13 @@ dfs("A");
 
 ### কোড (JavaScript)
 
-```javascript
+```;
 class PriorityQueue {
   constructor() {
     this.values = [];
   }
   enqueue(val, priority) {
-    this.values.push({val, priority});
+    this.values.push({ val, priority });
     this.values.sort((a, b) => a.priority - b.priority);
   }
   dequeue() {
@@ -303,23 +305,21 @@ const weightedGraph = {
   C: { D: 2, F: 4 },
   D: { E: 3 },
   E: { F: 1 },
-  F: {}
+  F: {},
 };
 
-console.log(dijkstra(weightedGraph, "A"));
+console.log(dijkstra(weightedGraph, 'A'));
 ```
 
 **Output (shortest distances from A):**
 
-```json
-{
-  distances: { A: 0, B: 4, C: 2, D: 4, E: 7, F: 8 },
-  previous: { A: null, B: "A", C: "A", D: "C", E: "B", F: "E" }
-}
+```// json
+// {
+//   distances: { A: 0, B: 4, C: 2, D: 4, E: 7, F: 8 },
+//   previous: { A: null, B: "A", C: "A", D: "C", E: "B", F: "E" }
+// }
+
 ```
-
----
-
 ## 4. অন্যান্য Graph Algorithms
 
 * **Bellman-Ford Algorithm** → negative weights এর জন্য shortest path বের করতে ব্যবহৃত হয়।
@@ -330,4 +330,4 @@ console.log(dijkstra(weightedGraph, "A"));
 ---
 
 👉 এখন বলুন, আপনি কি চান আমি এগুলো **Step-by-step Visualization (Diagram সহ বাংলায়)** দেখাই, নাকি শুধু **JavaScript কোড প্র্যাকটিস** করার জন্য বিস্তারিত example দেব?
-```
+```;
