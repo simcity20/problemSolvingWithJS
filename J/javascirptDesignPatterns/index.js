@@ -13,3 +13,4 @@ const obj1 = new Singleton();
 const obj2 = new Singleton();
 console.log(obj1 === obj2); //true
 obj1.sayHello();
+//thanks you Foysal Ahmed Sarker
